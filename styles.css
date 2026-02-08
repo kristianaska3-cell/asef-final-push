@@ -1,0 +1,104 @@
+/* TIMETABLE BASE */
+table#schedule {
+  border: none;
+  font-size: 14px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+table#schedule th {
+  background: #2a4272;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 15px 10px;
+  text-align: center;
+}
+
+table#schedule td {
+  border: 1px solid #dde2e6;
+  padding: 10px;
+  min-width: 130px;
+  vertical-align: middle;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+table#schedule td:hover {
+  background: #f1f5f9;
+}
+
+/* SELECTED LESSON BLOCK */
+.selected {
+  display: block;
+  background: #6272a4;
+  color: white;
+  border-radius: 6px;
+  padding: 8px;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+/* LESSON OPTIONS DROPDOWN */
+.options {
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.option {
+  background: #fff;
+  margin: 0;
+  padding: 8px 12px;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+
+.option:hover {
+  background: #eef2f7;
+}
+
+/* COLOR CODING BY SUBJECT */
+td[data-subject="Math"]     { background: #fde2e2; }
+td[data-subject="English"]  { background: #e2f4fd; }
+td[data-subject="Physics"]  { background: #e7fdea; }
+td[data-subject="History"]  { background: #fdf7e2; }
+/* Add more subject colors here... */
+
+/* FILTERS */
+header label {
+  font-weight: bold;
+  margin-right: 8px;
+  font-size: 15px;
+}
+
+header select {
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: 1px solid #aaaaaa;
+  font-size: 14px;
+  margin-right: 12px;
+}
+
+/* REQUIREMENT PANEL */
+.requirements {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.requirements h3 {
+  margin-bottom: 10px;
+  font-size: 17px;
+  color: #2a4272;
+}
+
+/* WARNINGS */
+.warning {
+  font-size: 14px;
+  color: #c53030;
+  font-weight: bold;
+}

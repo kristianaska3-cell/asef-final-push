@@ -1,0 +1,14 @@
+{
+    "files.autoSave": "onFocusChange",
+
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+
+    "diffEditor.hideUnchangedRegions.enabled": true,
+
+    "git.autofetch": true,
+
+    "diffEditor.maxComputationTime": 0,
+
+    "php.validate.executablePath": "/opt/homebrew/bin/php"
+
+}
