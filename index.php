@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link  rel="icon"  href="LOGO.png">
 <title>Advanced Lesson Scheduler</title>
 
 <style>
 body { margin:0; font-family: Arial, sans-serif; background:#f4f6f8; }
 header { background:#16a34a; color:white; padding:12px 20px;}
 .container { display:grid; grid-template-columns:3fr 1fr; height:calc(100vh - 60px); }
-.timetable { padding:15px; overflow:auto; }
+.timetable {display: flex; flex-direction: column; align-items: center; padding:15px; overflow:auto; }
 table { width:100%; border-collapse:collapse; background:white; }
 th, td { border:1px solid #ccc; padding:8px; text-align:center; position:relative; }
 th { background:#dcfce7; }
@@ -100,18 +101,24 @@ button:disabled { opacity:0.5; cursor:not-allowed; }
 <div id="hours"></div>
 <div id="warnings" class="warning"></div>
 </div>
-</div>
 
 <button id="continueBtn" onclick="openNamePopup()" disabled style="
-  margin:20px;
+  margin-top:20px;
+  margin-left:20px;
+  margin-right:20px;
   padding:12px 20px;
   font-size:16px;
   background:#16a34a;
   color:white;
+  width: 100px;
+  height: 50px;
   border:none;
   border-radius:6px;">
   Continue
 </button>
+
+</div>
+
 
 <!-- NAME POPUP -->
 <div id="namePopup" class="popup">
