@@ -12,9 +12,8 @@ table#schedule th {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  padding: 60px 50px;
+  padding: 15px 10px;
   text-align: center;
-  margin: 0 auto;
 }
 
 table#schedule td {
@@ -102,4 +101,33 @@ header select {
   font-size: 14px;
   color: #c53030;
   font-weight: bold;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  /* logo left, center centered via empty right */
+  background: #1f7a1f;
+  padding: 10px 20px;
+}
+
+.header-left {
+  flex: 0 0 auto;  /* keep logo at natural size */
+}
+
+.header-center {
+  flex: 1;                /* take remaining space */
+  display: flex;
+  justify-content: center; /* center filters */
+  gap: 15px;              /* space between filters */
+  align-items: center;
+}
+
+.header-right {
+  flex: 0 0 70px;  /* same width as logo (approx) to keep center truly centered */
+}
+
+.logo-img {
+  height: 70px;
+  width: auto;
 }

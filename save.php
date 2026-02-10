@@ -21,6 +21,36 @@ $stmt->close();
 $conn->close();
 ?>
 
+<style>
+  
+.popup {
+  display:none;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background:white;
+  padding:25px;
+  border-radius:8px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.3);
+  z-index:9999;
+  text-align:center;
+}
+.popup input {
+  width:90%;
+  padding:8px;
+  margin:8px 0;
+}
+.popup button {
+  padding:8px 16px;
+  margin-top:10px;
+  background:#16a34a;
+  color:white;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+</style>
 
 
 <div id="confirmationPopup" class="popup">
